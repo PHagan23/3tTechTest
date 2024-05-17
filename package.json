@@ -1,0 +1,23 @@
+{
+  "name": "3ttechtest",
+  "version": "1.0.0",
+  "description": "Technical Test for 3t Interview",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^13.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PHagan23/3tTechTest.git"
+  },
+  "author": "Patrick Hagan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PHagan23/3tTechTest/issues"
+  },
+  "homepage": "https://github.com/PHagan23/3tTechTest#readme"
+}
