@@ -2,7 +2,12 @@
 
 Instructions for setting up:
 
+Install Curl
+Install NPM
 Install Node JS
+Install FireFox
+
+https://nodejs.org/en/download/package-manager
 
 # installs nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
