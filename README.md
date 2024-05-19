@@ -34,9 +34,9 @@ Run Cypress:
 
 
 
-#Encountered Issues
+# Encountered Issues
 
-##Cypress would not load on initial set up
+## Cypress would not load on initial set up
 
 Root Cause: NodeJS version was too old - Incompatible
 
@@ -45,7 +45,7 @@ This should not be an issue on a fresh install
 
 Solution: Update NodeJS
 
-##Amazon thinks I'm a robot
+## Amazon thinks I'm a robot
 
 Root Cause: Continuous Test Runs
 
@@ -53,7 +53,7 @@ Due to running automation several times, Amazon thinks i'm a robot and requires 
 
 Solution: Overthrow Amazon in a coup d'état
 
-##Cy.visit(https://amazon.co.uk) directs to a different version of the Amazon site which the automation does not work on
+## Cy.visit(https://amazon.co.uk) directs to a different version of the Amazon site which the automation does not work on
 
 Root Cause: Unknown
 
