@@ -1,10 +1,10 @@
 describe('3tTest', () => {
   beforeEach(() => {
-    cy.visit('https://amazon.co.uk');
+    cy.visit('https://amazon.co.uk'); // Directs to amazon.co.uk
     cy.get('[data-cel-widget="sp-cc-accept"]').click(); // Accept cookies
   });
 
-  it('Adds socks to the cart and verifies the cart is not empty', () => {
+it('Adds socks to the cart and verifies the cart is not empty', () => {
     cy.get('[name="field-keywords"]').type('Socks{enter}'); // Search for 'Socks'
 
     cy.get('[data-image-index="1"]').first().click(); // Select the first item in the list
@@ -17,7 +17,6 @@ describe('3tTest', () => {
 
     cy.contains('Subtotal (1 item)').should('exist'); // Check that one item is in the cart
   });
-
 
 it('Deletes an item from the cart using the delete button and verifies it is empty', () => {
   cy.get('[name="field-keywords"]').type('Socks{enter}'); // Search for 'Socks'
@@ -39,8 +38,7 @@ it('Deletes an item from the cart using the delete button and verifies it is emp
   cy.get('.a-row.sc-your-amazon-cart-is-empty').should('exist'); // Verify the cart is empty on re-viewing the basket - checks for deletion error - client / server
   });
 
-
-  it('Deletes an item from the cart using the quantity button and verifies it is empty', () => {
+it('Deletes an item from the cart using the quantity button and verifies it is empty', () => {
     cy.get('[name="field-keywords"]').type('Socks{enter}'); // Search for 'Socks'
   
     cy.get('[data-image-index="1"]').first().click(); // Select the first item in the list
@@ -62,8 +60,6 @@ it('Deletes an item from the cart using the delete button and verifies it is emp
 
   });
   
-
-
 it('Increases the quanity of an item in the basket from 1 to 2', () => {
   cy.get('[name="field-keywords"]').type('Socks{enter}'); // Search for 'Socks'
 
