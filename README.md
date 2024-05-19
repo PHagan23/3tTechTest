@@ -2,7 +2,9 @@
 
 Instructions for setting up on a Linux Machine:
 
-Open Terminal
+Open Terminal:
+
+	[Control + Alt + T]
 
 Install Curl:
 
