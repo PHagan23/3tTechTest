@@ -23,7 +23,14 @@ Install Chrome:
 	verify with [google-chrome]
 
 Clone Repo:
-	git clone 
+	[git clone https://github.com/PHagan23/3tTechTest.git] to prefered repository
+	
+Install dependencies:
+	[npm install] while within project folder
+	
+Run Cypress:
+	[npm run cy:open]
+	'E2E Testing' > 'Chrome' > 'Start E2E Testing in Chrome' > spec.cy.js
 
 
     Upload the project from your office pc to a git repo (or personal GitHub if you dont have any company repo).
