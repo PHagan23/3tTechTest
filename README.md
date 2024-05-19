@@ -1,25 +1,30 @@
 # 3tTechTest
 
-Instructions for setting up:
+Instructions for setting up on a Linux Machine:
 
-Install Curl
-Install NPM
-Install Node JS
-Install FireFox
+Open Terminal
 
-https://nodejs.org/en/download/package-manager
+Install Curl:
+	[sudo apt install curl]
+	verify with [curl --version]
+	
+Install NPM:
+	[curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash]
+	verify with [npm -v]
+	
+Install Node JS:
+	[nvm install 20]
+	verify with [node -v]
+	
+Install Chrome:
+	[sudo apt-get install libxss1 libappindicator1 libindicator7]
+	[wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb]
+	[sudo apt install ./google-chrome*.deb]
+	verify with [google-chrome]
 
-# installs nvm (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+Clone Repo:
+	git clone 
 
-# download and install Node.js
-nvm install 20
-
-# verifies the right Node.js version is in the environment
-node -v # should print `v20.13.1`
-
-# verifies the right NPM version is in the environment
-npm -v # should print `10.5.2`
 
     Upload the project from your office pc to a git repo (or personal GitHub if you dont have any company repo).
 
