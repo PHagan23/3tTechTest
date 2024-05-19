@@ -44,9 +44,10 @@ Run Cypress:
 
 	[npm run cy:open]
 	
+	
+Run Test Suite:
+	
 	'E2E Testing' > 'Chrome' > 'Start E2E Testing in Chrome' > spec.cy.js
-
-
 
 # Encountered Issues
 
