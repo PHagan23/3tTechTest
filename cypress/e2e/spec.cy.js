@@ -132,15 +132,15 @@ it('Adds multiple different items to the cart and verifies the cart has two item
 
     cy.contains('Subtotal (2 items)').should('exist'); // Check that two items are in the cart
   });
-  
+
 it('Adds a quantity of 2 items of one item from the item page and verifies the cart has two items in it', () => {
     cy.get('[name="field-keywords"]').type('Socks{enter}'); // Search for 'Socks'
   
     cy.get('[data-image-index="1"]').first().click(); // Select the first item in the list
 
-    cy.get('span[id="a-autoid-13-announce"]').click()
+    cy.get('span[id="a-autoid-13-announce"]').click() // Selects the quantity drop down list
   
-    cy.get('ul[class="a-nostyle a-list-link"').find('li[class="a-dropdown-item"]').find('a[id="quantity_1"]').click() // Clicks 0 from dropdown list]
+    cy.get('ul[class="a-nostyle a-list-link"').find('li[class="a-dropdown-item"]').find('a[id="quantity_1"]').click() // Clicks 2 from dropdown list]
 
     cy.get('#add-to-cart-button').click(); // Add the item to the cart
   
@@ -148,8 +148,6 @@ it('Adds a quantity of 2 items of one item from the item page and verifies the c
   
     cy.get('.a-row.sc-your-amazon-cart-is-empty').should('not.exist'); // Verify the cart is not empty
 
-    cy.contains('Subtotal (2 items)').should('exist');
-    });
-
-
+    cy.contains('Subtotal (2 items)').should('exist'); // Check that two items are in the cart
+  });
 });
