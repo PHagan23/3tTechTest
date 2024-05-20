@@ -75,3 +75,10 @@ Solution: Overthrow Amazon in a coup d'état
 Root Cause: Unknown
 
 Solution: Introduce if statement in the 'BeforeEach' hook that checks if the suite has been directed to the required / correct version of the amazon site by identifying an element that is only present on the required version as a condition to proceed. If this element is not identified, run Cy.visit(https://amazon.co.uk) again to attempt to direct to required version of the site
+
+# Future Improvements
+
+## Readability / Maintainability
+
+- Break down and group common actions into functions, e.g. Searching for sock and adding them to the basket
+- Improve element selection to be closer to best practice, e.g. Selecting identifiers that will not change over time where possible, ID over Class for instance
